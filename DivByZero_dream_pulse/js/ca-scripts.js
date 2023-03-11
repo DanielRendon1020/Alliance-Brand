@@ -5,6 +5,9 @@ function addCustomerName() {
 
     let title = document.getElementById('title')
     title.textContent = customerName;
+    let header1 = document.getElementById('tm-header')
+    header1.textContent = customerName
+    let header2 = document.getElementById('')
     
     // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
 
@@ -13,12 +16,29 @@ function addCustomerName() {
 };
 
 function toggleColors() {
+
+    let colorChange = document.querySelectorAll('.tm-white-rect')
+
+    colorChange.forEach(element => {
+        element.classList.add('tm-blue-rect');
+        element.classList.remove('tm-white-rect')
+    })
+    
+    // for (i = 0; i < colorChange.length; ++i) {
+    //     colorChange[i].classList.add('tm-blue-rect');
+    //     colorChange[i].classList.remove('tm-white-rect');
+    // }
     // <!-- todo: Change all classes named 'tm-white-rect' to 'tm-blue-rect' -->
 
 };
 
 function hideElement() {
+
+    let ulHide = document.querySelector('.tm-social-links')
+    ulHide.style.visibility = 'hidden'
+
     //<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
+
 
 };
 
